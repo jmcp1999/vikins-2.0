@@ -1,4 +1,4 @@
-package org.example.viking;
+package org.example.vikins;
 
 import org.example.soldier.Soldier;
 import org.junit.jupiter.api.Test;
