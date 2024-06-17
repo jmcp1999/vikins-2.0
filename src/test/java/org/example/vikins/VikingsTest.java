@@ -10,13 +10,13 @@ class VikingTest {
     int strength = 150;
     int health = 300;
 
-//    Viking viking = new Viking(name, health, strength);
-//
-//    @Test
-//    public void should_inherit_from_Soldier() {
-//        assertNotNull(viking instanceof Soldier);
-//    }
-//
+    Viking viking = new Viking(name, health, strength);
+
+    @Test
+    public void should_inherit_from_Soldier() {
+        assertNotNull(viking instanceof Soldier);
+    }
+
 //    @Test
 //    public void should_receive_3_arguments() {
 //        assertNotNull(viking);
