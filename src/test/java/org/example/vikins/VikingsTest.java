@@ -10,7 +10,7 @@ class VikingTest {
     int strength = 150;
     int health = 300;
 
-    Viking viking = new Viking(name, health, strength);
+    Viking viking = new Viking(name, health, strength, msg);
 
     @Test
     public void should_inherit_from_Soldier() {
