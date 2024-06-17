@@ -3,39 +3,35 @@ package org.example.vikins;
 import org.example.soldier.Soldier;
 
 public class Viking extends Soldier {
-    public Viking(String name, int health, int strength, String msg) {
+    
+    public Viking(String name, int health, int strength) {
         super(health, strength);
               this.name = name;
-              this.health = health;
-              this.strength = strength;
-              this.msg = msg;
+              this.msg = "";
     }
+
     public String name;
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
-    public Integer health;
-    public int getHealth() {
-        return health;
-    }
-    public void setHealth(Integer health) {
-        this.health = health;
-    }
-    public Integer strength;
-    public int getStrength() {
-        return strength;
-    }
-    public void setStrength(Integer strength) {
-        this.strength = strength;
-    }
-    public String msg;
+
+    private String msg;
     public String getMsg() {
         return msg;
     }
-    public void setMsg(String msg) {
-        this.msg = msg;
+
+    @Override
+    public void receiveDamage(int damage) {
+        super.receiveDamage(damage);
+        if (this.health > 0) {
+            this.msg = this.name + " has received " + damage + " points of damage";
+        } else {
+            this.msg = this.name + " has died in act of combat";
+        }
     }
+
 }
