@@ -1,8 +1,8 @@
 package org.example.soldier;
 
 public class Soldier {
-    private Integer health;
-    private Integer strength;
+    public Integer health;
+    public Integer strength;
     
 
     public Soldier(int health, int strength) {
