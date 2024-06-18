@@ -24,6 +24,10 @@ public class Viking extends Soldier {
         return msg;
     }
 
+    public String battleCry(){
+        return "Odin Owns You All!";
+    }
+
     @Override
     public void receiveDamage(int damage) {
         super.receiveDamage(damage);
